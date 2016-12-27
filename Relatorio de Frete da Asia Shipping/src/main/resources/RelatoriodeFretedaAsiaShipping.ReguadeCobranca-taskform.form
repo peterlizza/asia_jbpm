@@ -1,0 +1,118 @@
+
+<form id="227617562">
+<property name="name" value="RelatoriodeFretedaAsiaShipping.ReguadeCobranca-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="12" name="taxa" type="InputTextFloat" id="1308572319">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;taxa (taxa)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="taxa"/>
+<property name="fieldClass" value="java.lang.Float"/>
+</field>
+<field position="8" name="faturado" type="CheckBox" id="1093868247">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;faturado (faturado)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="faturado"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="3" name="cliente" type="InputText" id="1633712041">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;cliente (cliente)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="cliente"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="9" name="filial" type="InputText" id="497825094">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;filial (filial)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="filial"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="11" name="roteiro" type="InputText" id="1546306816">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;roteiro (roteiro)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="roteiro"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="10" name="pedido" type="InputText" id="1279458697">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;pedido (pedido)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="pedido"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="0" name="ano" type="InputTextInteger" id="1340550059">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;ano (ano)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="ano"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="13" name="vendedor_cs" type="InputText" id="2030916288">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;vendedor_cs (vendedor_cs)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="vendedor_cs"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="cd_importacao" type="InputText" id="184337869">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;cd_importacao (cd_importacao)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="cd_importacao"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="4" name="cliente_follow" type="InputText" id="998897182">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;cliente_follow (cliente_follow)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="cliente_follow"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="7" name="empresa" type="InputText" id="556587931">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;empresa (empresa)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="empresa"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="5" name="dias_atrasados" type="InputTextInteger" id="1548246419">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;dias_atrasados (dias_atrasados)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="dias_atrasados"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="6" name="email" type="InputText" id="1512076667">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;email (email)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="email"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="cambio" type="InputTextFloat" id="2002197800">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;cambio (cambio)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="cambio"/>
+<property name="fieldClass" value="java.lang.Float"/>
+</field>
+<dataHolder inputId="" name="#BBBBBB" type="basicType" outId="ano" value="java.lang.Integer" id="ano"/>
+<dataHolder inputId="" name="#B29FE4" type="basicType" outId="cambio" value="java.lang.Float" id="cambio"/>
+<dataHolder inputId="" name="#FBB767" type="basicType" outId="cd_importacao" value="java.lang.String" id="cd_importacao"/>
+<dataHolder inputId="" name="#B29FE4" type="basicType" outId="cliente" value="java.lang.String" id="cliente"/>
+<dataHolder inputId="" name="#A7E690" type="basicType" outId="cliente_follow" value="java.lang.String" id="cliente_follow"/>
+<dataHolder inputId="" name="#BBBBBB" type="basicType" outId="dias_atrasados" value="java.lang.Integer" id="dias_atrasados"/>
+<dataHolder inputId="" name="#FBB767" type="basicType" outId="email" value="java.lang.String" id="email"/>
+<dataHolder inputId="" name="#E9E371" type="basicType" outId="empresa" value="java.lang.String" id="empresa"/>
+<dataHolder inputId="" name="#0000A0" type="basicType" outId="faturado" value="java.lang.Boolean" id="faturado"/>
+<dataHolder inputId="" name="#FF8881" type="basicType" outId="filial" value="java.lang.String" id="filial"/>
+<dataHolder inputId="" name="#FF54A7" type="basicType" outId="pedido" value="java.lang.String" id="pedido"/>
+<dataHolder inputId="" name="#9BCAFA" type="basicType" outId="roteiro" value="java.lang.String" id="roteiro"/>
+<dataHolder inputId="" name="#9BCAFA" type="basicType" outId="taxa" value="java.lang.Float" id="taxa"/>
+<dataHolder inputId="" name="#000000" type="basicType" outId="vendedor_cs" value="java.lang.String" id="vendedor_cs"/>
+</form>
