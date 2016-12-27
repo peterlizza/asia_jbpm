@@ -12,15 +12,16 @@
 <property name="outputBinding" value="saida/ano"/>
 <property name="fieldClass" value="java.lang.Integer"/>
 </field>
-<field position="3" name="form-juridico_cambio" type="InputTextBigDecimal" id="594105785">
+<field position="5" name="form-juridico_cambio" type="InputTextBigDecimal" id="594105785">
 <property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
 <property name="label" value="quot;enquot;,quot;cambio (form-juridico)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value="entrada/cambio"/>
 <property name="outputBinding" value="saida/cambio"/>
 <property name="fieldClass" value="java.math.BigDecimal"/>
 </field>
-<field position="4" name="form-juridico_cd_importacao" type="InputText" id="713163456">
+<field position="6" name="form-juridico_cd_importacao" type="InputText" id="713163456">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;cd_importacao (form-juridico)quot;"/>
 <property name="readonly" value="false"/>
@@ -28,15 +29,16 @@
 <property name="outputBinding" value="saida/cd_importacao"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="5" name="form-juridico_cliente" type="InputText" id="934558770">
+<field position="3" name="form-juridico_cliente" type="InputText" id="934558770">
 <property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
 <property name="label" value="quot;enquot;,quot;cliente (form-juridico)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value="entrada/cliente"/>
 <property name="outputBinding" value="saida/cliente"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="6" name="form-juridico_cliente_follow" type="InputText" id="923946868">
+<field position="7" name="form-juridico_cliente_follow" type="InputText" id="923946868">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;cliente_follow (form-juridico)quot;"/>
 <property name="readonly" value="false"/>
@@ -44,7 +46,7 @@
 <property name="outputBinding" value="saida/cliente_follow"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="7" name="form-juridico_data_eta" type="InputDate" id="1766605702">
+<field position="8" name="form-juridico_data_eta" type="InputDate" id="1766605702">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;data_eta (form-juridico)quot;"/>
 <property name="readonly" value="false"/>
@@ -52,7 +54,7 @@
 <property name="outputBinding" value="saida/data_eta"/>
 <property name="fieldClass" value="java.util.Date"/>
 </field>
-<field position="8" name="form-juridico_dias_atraso" type="InputDate" id="1649591871">
+<field position="9" name="form-juridico_dias_atraso" type="InputDate" id="1649591871">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;dias_atraso (form-juridico)quot;"/>
 <property name="readonly" value="false"/>
@@ -60,7 +62,7 @@
 <property name="outputBinding" value="saida/dias_atraso"/>
 <property name="fieldClass" value="java.util.Date"/>
 </field>
-<field position="9" name="form-juridico_dt_vencimento" type="InputDate" id="590474575">
+<field position="10" name="form-juridico_dt_vencimento" type="InputDate" id="590474575">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;dt_vencimento (form-juridico)quot;"/>
 <property name="readonly" value="false"/>
@@ -68,16 +70,20 @@
 <property name="outputBinding" value="saida/dt_vencimento"/>
 <property name="fieldClass" value="java.util.Date"/>
 </field>
-<field position="0" name="form-juridico_empresa" type="InputText" id="1788877805">
+<field position="0" name="Empresa" type="InputText" id="1788877805">
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="false"/>
-<property name="label" value="quot;enquot;,quot;empresa (form-juridico)quot;"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;empresa (form-juridico)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;Empresaquot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
 <property name="inputBinding" value="entrada/empresa"/>
 <property name="outputBinding" value="saida/empresa"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="10" name="form-juridico_faturado" type="CheckBoxPrimitiveBoolean" id="1678472904">
+<field position="11" name="form-juridico_faturado" type="CheckBoxPrimitiveBoolean" id="1678472904">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;faturado (form-juridico)quot;"/>
 <property name="readonly" value="false"/>
@@ -85,8 +91,9 @@
 <property name="outputBinding" value="saida/faturado"/>
 <property name="fieldClass" value="boolean"/>
 </field>
-<field position="11" name="form-juridico_filial" type="InputText" id="455663534">
+<field position="4" name="form-juridico_filial" type="InputText" id="455663534">
 <property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
 <property name="label" value="quot;enquot;,quot;filial (form-juridico)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value="entrada/filial"/>
