@@ -1,0 +1,38 @@
+
+<form id="673303723">
+<property name="name" value="terceiro-email-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="comentarios" type="InputText" id="1264984481">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;comentarios (comentarios)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="comentarios"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="dias_atrasados" type="InputTextInteger" id="1080208468">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;in_atraso (dias_atrasados)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="in_atraso"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="2" name="empresa" type="InputText" id="1143805713">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;in_empresa (empresa)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="in_empresa"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="3" name="filial" type="InputText" id="1708920243">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;in_filial (filial)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="in_filial"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="" name="#FF8881" type="basicType" outId="comentarios" value="java.lang.String" id="comentarios"/>
+<dataHolder inputId="in_atraso" name="#BBBBBB" type="basicType" outId="" value="java.lang.Integer" id="dias_atrasados"/>
+<dataHolder inputId="in_empresa" name="#E9E371" type="basicType" outId="" value="java.lang.String" id="empresa"/>
+<dataHolder inputId="in_filial" name="#FF8881" type="basicType" outId="" value="java.lang.String" id="filial"/>
+</form>
