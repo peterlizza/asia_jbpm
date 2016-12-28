@@ -1,0 +1,38 @@
+
+<form id="28486134">
+<property name="name" value="primeiro-email-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="3" name="pedido" type="InputText" id="1339558735">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;in_pedido (pedido)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="in_pedido"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="dias_atrasados" type="InputTextInteger" id="1779938125">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;in_dias_atrasados (dias_atrasados)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="in_dias_atrasados"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="2" name="empresa" type="InputText" id="758458089">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;in_empresa (empresa)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="in_empresa"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="0" name="comentarios" type="InputText" id="2030747589">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;out_comentario (comentarios)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="out_comentario"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="" name="#FF8881" type="basicType" outId="out_comentario" value="java.lang.String" id="comentarios"/>
+<dataHolder inputId="in_dias_atrasados" name="#BBBBBB" type="basicType" outId="" value="java.lang.Integer" id="dias_atrasados"/>
+<dataHolder inputId="in_empresa" name="#E9E371" type="basicType" outId="" value="java.lang.String" id="empresa"/>
+<dataHolder inputId="in_pedido" name="#FF54A7" type="basicType" outId="" value="java.lang.String" id="pedido"/>
+</form>
