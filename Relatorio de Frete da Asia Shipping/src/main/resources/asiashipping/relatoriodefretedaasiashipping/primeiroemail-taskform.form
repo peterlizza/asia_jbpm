@@ -3,73 +3,78 @@
 <property name="name" value="primeiroemail-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
-<field position="0" name="ano" type="InputTextInteger" id="88498283">
+<field position="1" name="ano" type="InputTextInteger" id="88498283">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;in_ano (ano)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value="in_ano"/>
 <property name="fieldClass" value="java.lang.Integer"/>
 </field>
-<field position="1" name="cambio" type="InputTextFloat" id="6281084">
+<field position="2" name="cambio" type="InputTextFloat" id="6281084">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;in_cambio (cambio)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value="in_cambio"/>
 <property name="fieldClass" value="java.lang.Float"/>
 </field>
-<field position="2" name="cd_importacao" type="InputText" id="1762408307">
+<field position="3" name="cd_importacao" type="InputText" id="1762408307">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;in_importacao (cd_importacao)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value="in_importacao"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="3" name="cliente" type="InputText" id="425330872">
+<field position="4" name="cliente" type="InputText" id="425330872">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;in_cliente (cliente)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value="in_cliente"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="4" name="cliente_follow" type="InputText" id="1880918734">
+<field position="5" name="cliente_follow" type="InputText" id="1880918734">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;in_follow (cliente_follow)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value="in_follow"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="5" name="comentario" type="InputText" id="900372803">
+<field position="6" name="comentario" type="InputText" id="900372803">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;out_descricao (comentario)quot;"/>
 <property name="readonly" value="false"/>
 <property name="outputBinding" value="out_descricao"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="6" name="data_eta" type="InputText" id="331482277">
+<field position="7" name="data_eta" type="InputText" id="331482277">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;in_data_eta (data_eta)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value="in_data_eta"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="7" name="data_vencimento" type="InputText" id="145507265">
+<field position="8" name="data_vencimento" type="InputText" id="145507265">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;in_data_vencimento (data_vencimento)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value="in_data_vencimento"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="8" name="dias_atraso" type="InputTextInteger" id="768021779">
+<field position="9" name="dias_atraso" type="InputTextInteger" id="768021779">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;in_dias_atraso (dias_atraso)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value="in_dias_atraso"/>
 <property name="fieldClass" value="java.lang.Integer"/>
 </field>
-<field position="9" name="empresa" type="InputText" id="1003900157">
+<field position="0" name="empresa" type="InputText" id="1003900157">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;in_emprea (empresa)quot;"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;in_emprea (empresa)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;Empresaquot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
 <property name="inputBinding" value="in_emprea"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
