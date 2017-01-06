@@ -66,77 +66,106 @@
 <property name="inputBinding" value="in_follow"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="6" name="comentario" type="InputText" id="900372803">
+<field position="16" name="comentario" type="InputText" id="900372803">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;out_descricao (comentario)quot;"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Comentariosquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
 <property name="outputBinding" value="out_descricao"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="7" name="data_eta" type="InputText" id="331482277">
+<field position="6" name="data_eta" type="InputText" id="331482277">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;in_data_eta (data_eta)quot;"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Data ETAquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
 <property name="inputBinding" value="in_data_eta"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="8" name="data_vencimento" type="InputText" id="145507265">
+<field position="7" name="data_vencimento" type="InputText" id="145507265">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;in_data_vencimento (data_vencimento)quot;"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Data de Vencimentoquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
 <property name="inputBinding" value="in_data_vencimento"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="9" name="dias_atraso" type="InputTextInteger" id="768021779">
+<field position="8" name="dias_atraso" type="InputTextInteger" id="768021779">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;in_dias_atraso (dias_atraso)quot;"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Dias de Atrasoquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value="in_dias_atraso"/>
 <property name="fieldClass" value="java.lang.Integer"/>
 </field>
-<field position="10" name="faturado" type="CheckBox" id="711811055">
+<field position="9" name="faturado" type="CheckBox" id="711811055">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;in_faturado (faturado)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value="in_faturado"/>
 <property name="fieldClass" value="java.lang.Boolean"/>
 </field>
-<field position="11" name="filial" type="InputText" id="112120233">
+<field position="10" name="filial" type="InputText" id="112120233">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;in_filial (filial)quot;"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Filialquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
 <property name="inputBinding" value="in_filial"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="12" name="pedido" type="InputText" id="726923159">
+<field position="11" name="pedido" type="InputText" id="726923159">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;in_pedido (pedido)quot;"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Pedidoquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
 <property name="inputBinding" value="in_pedido"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="13" name="roteiro" type="InputText" id="1096168502">
+<field position="12" name="roteiro" type="InputText" id="1096168502">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;in_roteiro (roteiro)quot;"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Roteiroquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
 <property name="inputBinding" value="in_roteiro"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="14" name="taxa" type="InputTextFloat" id="189278944">
+<field position="13" name="taxa" type="InputTextFloat" id="189278944">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;in_taxa (taxa)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value="in_taxa"/>
 <property name="fieldClass" value="java.lang.Float"/>
 </field>
-<field position="15" name="valor" type="InputTextFloat" id="712262579">
+<field position="14" name="valor" type="InputTextFloat" id="712262579">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;in_valor (valor)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value="in_valor"/>
 <property name="fieldClass" value="java.lang.Float"/>
 </field>
-<field position="16" name="vendedor_cs" type="InputText" id="766042506">
+<field position="15" name="vendedor_cs" type="InputText" id="766042506">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;in_vendedor_cs (vendedor_cs)quot;"/>
 <property name="readonly" value="false"/>
