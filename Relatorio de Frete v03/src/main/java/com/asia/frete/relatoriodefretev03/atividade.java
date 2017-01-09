@@ -10,7 +10,7 @@ public class atividade implements java.io.Serializable
    static final long serialVersionUID = 1L;
 
    private com.asia.frete.relatoriodefretev03.pedido pedido_da_atividade;
-   private com.asia.frete.relatoriodefretev03.item item_da_atividade;
+   private java.util.List<com.asia.frete.relatoriodefretev03.item> item_da_atividade;
 
    public atividade()
    {
@@ -27,20 +27,20 @@ public class atividade implements java.io.Serializable
       this.pedido_da_atividade = pedido_da_atividade;
    }
 
-   public com.asia.frete.relatoriodefretev03.item getItem_da_atividade()
+   public java.util.List<com.asia.frete.relatoriodefretev03.item> getItem_da_atividade()
    {
       return this.item_da_atividade;
    }
 
    public void setItem_da_atividade(
-         com.asia.frete.relatoriodefretev03.item item_da_atividade)
+         java.util.List<com.asia.frete.relatoriodefretev03.item> item_da_atividade)
    {
       this.item_da_atividade = item_da_atividade;
    }
 
    public atividade(
          com.asia.frete.relatoriodefretev03.pedido pedido_da_atividade,
-         com.asia.frete.relatoriodefretev03.item item_da_atividade)
+         java.util.List<com.asia.frete.relatoriodefretev03.item> item_da_atividade)
    {
       this.pedido_da_atividade = pedido_da_atividade;
       this.item_da_atividade = item_da_atividade;
