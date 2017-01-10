@@ -9,14 +9,18 @@ public class item implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   @org.kie.api.definition.type.Label(value = "Item")
+   @org.kie.api.definition.type.Label("Item")
    private java.lang.Integer nr_item;
-   @org.kie.api.definition.type.Label(value = "Codigo da Taxa")
+   @org.kie.api.definition.type.Label("Codigo da Taxa")
    private java.lang.Integer cd_taxa;
-   @org.kie.api.definition.type.Label(value = "Valor da Taxa")
+   @org.kie.api.definition.type.Label("Valor da Taxa")
    private java.math.BigDecimal vl_taxa;
-   @org.kie.api.definition.type.Label(value = "Cambio")
+   @org.kie.api.definition.type.Label("Cambio")
    private java.math.BigDecimal taxa_dolar;
+
+   private java.math.BigDecimal vl_real;
+
+   private java.math.BigDecimal vl_usd;
 
    public item()
    {
@@ -62,13 +66,36 @@ public class item implements java.io.Serializable
       this.taxa_dolar = taxa_dolar;
    }
 
+   public java.math.BigDecimal getVl_real()
+   {
+      return this.vl_real;
+   }
+
+   public void setVl_real(java.math.BigDecimal vl_real)
+   {
+      this.vl_real = vl_real;
+   }
+
+   public java.math.BigDecimal getVl_usd()
+   {
+      return this.vl_usd;
+   }
+
+   public void setVl_usd(java.math.BigDecimal vl_usd)
+   {
+      this.vl_usd = vl_usd;
+   }
+
    public item(java.lang.Integer nr_item, java.lang.Integer cd_taxa,
-         java.math.BigDecimal vl_taxa, java.math.BigDecimal taxa_dolar)
+         java.math.BigDecimal vl_taxa, java.math.BigDecimal taxa_dolar,
+         java.math.BigDecimal vl_real, java.math.BigDecimal vl_usd)
    {
       this.nr_item = nr_item;
       this.cd_taxa = cd_taxa;
       this.vl_taxa = vl_taxa;
       this.taxa_dolar = taxa_dolar;
+      this.vl_real = vl_real;
+      this.vl_usd = vl_usd;
    }
 
 }
