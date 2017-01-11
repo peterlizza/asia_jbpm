@@ -5,28 +5,73 @@ package com.asia.frete.relatoriodefretev03;
  */
 
 @javax.persistence.Entity
-public class roteiro implements java.io.Serializable {
+public class roteiro implements java.io.Serializable
+{
 
-    static final long serialVersionUID = 1L;
+   static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "ROTEIRO_ID_GENERATOR")
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(name = "ROTEIRO_ID_GENERATOR", sequenceName = "ROTEIRO_ID_SEQ")
-    private java.lang.Long id;
+   @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "ROTEIRO_ID_GENERATOR")
+   @javax.persistence.Id
+   @javax.persistence.SequenceGenerator(name = "ROTEIRO_ID_GENERATOR", sequenceName = "ROTEIRO_ID_SEQ")
+   private java.lang.Long id;
 
-    public roteiro() {
-    }
-    
-    public roteiro(java.lang.Long id) {
-        this.id = id;
-    }
+   private int cd_empresa;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+   private int sigla_roteiro;
+
+   private int ano_roteiro;
+
+   public roteiro()
+   {
+   }
+
+   public java.lang.Long getId()
+   {
+      return this.id;
+   }
+
+   public void setId(java.lang.Long id)
+   {
+      this.id = id;
+   }
+
+   public int getCd_empresa()
+   {
+      return this.cd_empresa;
+   }
+
+   public void setCd_empresa(int cd_empresa)
+   {
+      this.cd_empresa = cd_empresa;
+   }
+
+   public int getSigla_roteiro()
+   {
+      return this.sigla_roteiro;
+   }
+
+   public void setSigla_roteiro(int sigla_roteiro)
+   {
+      this.sigla_roteiro = sigla_roteiro;
+   }
+
+   public int getAno_roteiro()
+   {
+      return this.ano_roteiro;
+   }
+
+   public void setAno_roteiro(int ano_roteiro)
+   {
+      this.ano_roteiro = ano_roteiro;
+   }
+
+   public roteiro(java.lang.Long id, int cd_empresa, int sigla_roteiro,
+         int ano_roteiro)
+   {
+      this.id = id;
+      this.cd_empresa = cd_empresa;
+      this.sigla_roteiro = sigla_roteiro;
+      this.ano_roteiro = ano_roteiro;
+   }
 
 }
