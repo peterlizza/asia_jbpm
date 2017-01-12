@@ -14,7 +14,7 @@ public class corpo implements java.io.Serializable
    private com.asia.frete.relatoriodefretev03.cliente cliente;
    private com.asia.frete.relatoriodefretev03.item item;
    private java.lang.String link_para_ERP;
-   private java.math.BigDecimal total__de_debitos;
+   private java.math.BigDecimal total_de_debitos;
 
    public corpo()
    {
@@ -70,29 +70,28 @@ public class corpo implements java.io.Serializable
       this.link_para_ERP = link_para_ERP;
    }
 
-   public java.math.BigDecimal getTotal__de_debitos()
+   public java.math.BigDecimal getTotal_de_debitos()
    {
-      return this.total__de_debitos;
+      return this.total_de_debitos;
    }
 
-   public void setTotal__de_debitos(java.math.BigDecimal total__de_debitos)
+   public void setTotal_de_debitos(java.math.BigDecimal total_de_debitos)
    {
-      this.total__de_debitos = total__de_debitos;
+      this.total_de_debitos = total_de_debitos;
    }
 
    public corpo(com.asia.frete.relatoriodefretev03.roteiro roteiro,
          com.asia.frete.relatoriodefretev03.pedido pedido,
          com.asia.frete.relatoriodefretev03.cliente cliente,
          com.asia.frete.relatoriodefretev03.item item,
-         java.lang.String link_para_ERP,
-         java.math.BigDecimal total__de_debitos)
+         java.lang.String link_para_ERP, java.math.BigDecimal total_de_debitos)
    {
       this.roteiro = roteiro;
       this.pedido = pedido;
       this.cliente = cliente;
       this.item = item;
       this.link_para_ERP = link_para_ERP;
-      this.total__de_debitos = total__de_debitos;
+      this.total_de_debitos = total_de_debitos;
    }
 
 }
