@@ -3,4 +3,32 @@
 <property name="name" value="containers.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
+<field position="1" name="containers_nr_fatura" type="InputTextPrimitiveInteger" id="2100135015">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;enquot;,quot;nr_fatura (containers)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="in_containers/nr_fatura"/>
+<property name="outputBinding" value="out_containers/nr_fatura"/>
+<property name="fieldClass" value="int"/>
+</field>
+<field position="0" name="containers_flag_fatura" type="CheckBox" id="1667764888">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;enquot;,quot;flag_fatura (containers)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="in_containers/flag_fatura"/>
+<property name="outputBinding" value="out_containers/flag_fatura"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="2" name="containers_dt_eta" type="InputDate" id="1204949839">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="label" value="quot;enquot;,quot;dt_eta (containers)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="in_containers/dt_eta"/>
+<property name="outputBinding" value="out_containers/dt_eta"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<dataHolder inputId="in_containers" name="#E9E371" type="dataModelerEntry" outId="out_containers" value="com.asia.frete.relatoriodefretev03.containers" id="containers"/>
 </form>
