@@ -25,11 +25,10 @@ public class item implements java.io.Serializable
 
    private int cd_taxa;
 
+   @org.kie.api.definition.type.Description("Cambio")
    private java.math.BigDecimal vl_taxa;
 
    private java.math.BigDecimal taxa_dolar;
-
-   private java.math.BigDecimal valor_dolar;
 
    private java.lang.String tp_operacao;
 
@@ -117,16 +116,6 @@ public class item implements java.io.Serializable
       this.taxa_dolar = taxa_dolar;
    }
 
-   public java.math.BigDecimal getValor_dolar()
-   {
-      return this.valor_dolar;
-   }
-
-   public void setValor_dolar(java.math.BigDecimal valor_dolar)
-   {
-      this.valor_dolar = valor_dolar;
-   }
-
    public java.lang.String getTp_operacao()
    {
       return this.tp_operacao;
@@ -138,9 +127,8 @@ public class item implements java.io.Serializable
    }
 
    public item(java.lang.Long id, int nr_item, java.util.Date dt_vencto,
-         java.math.BigDecimal vl_usr, java.math.BigDecimal vl_real,
-         int cd_taxa, java.math.BigDecimal vl_taxa,
-         java.math.BigDecimal taxa_dolar, java.math.BigDecimal valor_dolar,
+         java.math.BigDecimal vl_usr, java.math.BigDecimal vl_real, int cd_taxa,
+         java.math.BigDecimal vl_taxa, java.math.BigDecimal taxa_dolar,
          java.lang.String tp_operacao)
    {
       this.id = id;
@@ -151,7 +139,6 @@ public class item implements java.io.Serializable
       this.cd_taxa = cd_taxa;
       this.vl_taxa = vl_taxa;
       this.taxa_dolar = taxa_dolar;
-      this.valor_dolar = valor_dolar;
       this.tp_operacao = tp_operacao;
    }
 
