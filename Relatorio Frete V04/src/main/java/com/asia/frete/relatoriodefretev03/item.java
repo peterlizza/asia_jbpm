@@ -30,8 +30,6 @@ public class item implements java.io.Serializable
 
    private java.math.BigDecimal taxa_dolar;
 
-   private java.lang.String tp_operacao;
-
    public item()
    {
    }
@@ -116,20 +114,9 @@ public class item implements java.io.Serializable
       this.taxa_dolar = taxa_dolar;
    }
 
-   public java.lang.String getTp_operacao()
-   {
-      return this.tp_operacao;
-   }
-
-   public void setTp_operacao(java.lang.String tp_operacao)
-   {
-      this.tp_operacao = tp_operacao;
-   }
-
    public item(java.lang.Long id, int nr_item, java.util.Date dt_vencto,
          java.math.BigDecimal vl_usr, java.math.BigDecimal vl_real, int cd_taxa,
-         java.math.BigDecimal vl_taxa, java.math.BigDecimal taxa_dolar,
-         java.lang.String tp_operacao)
+         java.math.BigDecimal vl_taxa, java.math.BigDecimal taxa_dolar)
    {
       this.id = id;
       this.nr_item = nr_item;
@@ -139,7 +126,6 @@ public class item implements java.io.Serializable
       this.cd_taxa = cd_taxa;
       this.vl_taxa = vl_taxa;
       this.taxa_dolar = taxa_dolar;
-      this.tp_operacao = tp_operacao;
    }
 
 }
