@@ -13,6 +13,7 @@
 </field>
 <field position="1" name="item_nr_item" type="InputTextPrimitiveInteger" id="1847747801">
 <property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
 <property name="label" value="quot;enquot;,quot;nr_item (item)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value="item/nr_item"/>
@@ -21,6 +22,7 @@
 </field>
 <field position="2" name="item_taxa_dolar" type="InputTextBigDecimal" id="1134552326">
 <property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
 <property name="label" value="quot;enquot;,quot;taxa_dolar (item)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value="item/taxa_dolar"/>
@@ -29,6 +31,7 @@
 </field>
 <field position="3" name="item_valor_dolar" type="InputTextBigDecimal" id="2088609680">
 <property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
 <property name="label" value="quot;enquot;,quot;valor_dolar (item)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value="item/valor_dolar"/>
@@ -37,6 +40,7 @@
 </field>
 <field position="4" name="item_vl_real" type="InputTextBigDecimal" id="1145754616">
 <property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
 <property name="label" value="quot;enquot;,quot;vl_real (item)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value="item/vl_real"/>
@@ -45,6 +49,7 @@
 </field>
 <field position="5" name="item_vl_taxa" type="InputTextBigDecimal" id="136154449">
 <property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
 <property name="label" value="quot;enquot;,quot;vl_taxa (item)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value="item/vl_taxa"/>
@@ -53,6 +58,7 @@
 </field>
 <field position="6" name="item_vl_usr" type="InputTextBigDecimal" id="976856603">
 <property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
 <property name="label" value="quot;enquot;,quot;vl_usr (item)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value="item/vl_usr"/>
