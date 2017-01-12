@@ -3,4 +3,61 @@
 <property name="name" value="item.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
+<field position="0" name="item_dt_vencto" type="InputDate" id="227884285">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;dt_vencto (item)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="item/dt_vencto"/>
+<property name="outputBinding" value="item/dt_vencto"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="1" name="item_nr_item" type="InputTextPrimitiveInteger" id="1847747801">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;nr_item (item)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="item/nr_item"/>
+<property name="outputBinding" value="item/nr_item"/>
+<property name="fieldClass" value="int"/>
+</field>
+<field position="2" name="item_taxa_dolar" type="InputTextBigDecimal" id="1134552326">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;taxa_dolar (item)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="item/taxa_dolar"/>
+<property name="outputBinding" value="item/taxa_dolar"/>
+<property name="fieldClass" value="java.math.BigDecimal"/>
+</field>
+<field position="3" name="item_valor_dolar" type="InputTextBigDecimal" id="2088609680">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;valor_dolar (item)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="item/valor_dolar"/>
+<property name="outputBinding" value="item/valor_dolar"/>
+<property name="fieldClass" value="java.math.BigDecimal"/>
+</field>
+<field position="4" name="item_vl_real" type="InputTextBigDecimal" id="1145754616">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;vl_real (item)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="item/vl_real"/>
+<property name="outputBinding" value="item/vl_real"/>
+<property name="fieldClass" value="java.math.BigDecimal"/>
+</field>
+<field position="5" name="item_vl_taxa" type="InputTextBigDecimal" id="136154449">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;vl_taxa (item)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="item/vl_taxa"/>
+<property name="outputBinding" value="item/vl_taxa"/>
+<property name="fieldClass" value="java.math.BigDecimal"/>
+</field>
+<field position="6" name="item_vl_usr" type="InputTextBigDecimal" id="976856603">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;vl_usr (item)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="item/vl_usr"/>
+<property name="outputBinding" value="item/vl_usr"/>
+<property name="fieldClass" value="java.math.BigDecimal"/>
+</field>
+<dataHolder inputId="item" name="#9BCAFA" type="dataModelerEntry" outId="item" value="com.asia.frete.relatoriodefretev03.item" id="item"/>
 </form>
