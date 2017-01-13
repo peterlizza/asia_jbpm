@@ -14,8 +14,9 @@ public class principal implements java.io.Serializable
    private com.asia.frete.relatoriodefretev03.pedido principal_pedido;
    private com.asia.frete.relatoriodefretev03.item principal_item;
    private com.asia.frete.relatoriodefretev03.cliente principal_cliente;
-   private java.math.BigDecimal principal_toal;
    private java.lang.String principal_link_erp;
+
+   private java.math.BigDecimal principal_total;
 
    public principal()
    {
@@ -76,16 +77,6 @@ public class principal implements java.io.Serializable
       this.principal_cliente = principal_cliente;
    }
 
-   public java.math.BigDecimal getPrincipal_toal()
-   {
-      return this.principal_toal;
-   }
-
-   public void setPrincipal_toal(java.math.BigDecimal principal_toal)
-   {
-      this.principal_toal = principal_toal;
-   }
-
    public java.lang.String getPrincipal_link_erp()
    {
       return this.principal_link_erp;
@@ -96,22 +87,31 @@ public class principal implements java.io.Serializable
       this.principal_link_erp = principal_link_erp;
    }
 
-   public principal(
-         com.asia.frete.relatoriodefretev03.roteiro principal_roteiro,
+   public java.math.BigDecimal getPrincipal_total()
+   {
+      return this.principal_total;
+   }
+
+   public void setPrincipal_total(java.math.BigDecimal principal_total)
+   {
+      this.principal_total = principal_total;
+   }
+
+   public principal(com.asia.frete.relatoriodefretev03.roteiro principal_roteiro,
          com.asia.frete.relatoriodefretev03.containers principal_containers,
          com.asia.frete.relatoriodefretev03.pedido principal_pedido,
          com.asia.frete.relatoriodefretev03.item principal_item,
          com.asia.frete.relatoriodefretev03.cliente principal_cliente,
-         java.math.BigDecimal principal_toal,
-         java.lang.String principal_link_erp)
+         java.lang.String principal_link_erp,
+         java.math.BigDecimal principal_total)
    {
       this.principal_roteiro = principal_roteiro;
       this.principal_containers = principal_containers;
       this.principal_pedido = principal_pedido;
       this.principal_item = principal_item;
       this.principal_cliente = principal_cliente;
-      this.principal_toal = principal_toal;
       this.principal_link_erp = principal_link_erp;
+      this.principal_total = principal_total;
    }
 
 }
