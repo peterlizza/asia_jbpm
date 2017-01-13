@@ -12,11 +12,13 @@ public class principal implements java.io.Serializable
    private com.asia.frete.relatoriodefretev03.roteiro principal_roteiro;
    private com.asia.frete.relatoriodefretev03.containers principal_containers;
    private com.asia.frete.relatoriodefretev03.pedido principal_pedido;
-   private com.asia.frete.relatoriodefretev03.item principal_item;
-   private com.asia.frete.relatoriodefretev03.cliente principal_cliente;
    private java.lang.String principal_link_erp;
 
    private java.math.BigDecimal principal_total;
+
+   private java.util.List<com.asia.frete.relatoriodefretev03.item> principal_item;
+
+   private java.util.List<com.asia.frete.relatoriodefretev03.cliente> principal_cliente;
 
    public principal()
    {
@@ -55,28 +57,6 @@ public class principal implements java.io.Serializable
       this.principal_pedido = principal_pedido;
    }
 
-   public com.asia.frete.relatoriodefretev03.item getPrincipal_item()
-   {
-      return this.principal_item;
-   }
-
-   public void setPrincipal_item(
-         com.asia.frete.relatoriodefretev03.item principal_item)
-   {
-      this.principal_item = principal_item;
-   }
-
-   public com.asia.frete.relatoriodefretev03.cliente getPrincipal_cliente()
-   {
-      return this.principal_cliente;
-   }
-
-   public void setPrincipal_cliente(
-         com.asia.frete.relatoriodefretev03.cliente principal_cliente)
-   {
-      this.principal_cliente = principal_cliente;
-   }
-
    public java.lang.String getPrincipal_link_erp()
    {
       return this.principal_link_erp;
@@ -97,21 +77,44 @@ public class principal implements java.io.Serializable
       this.principal_total = principal_total;
    }
 
-   public principal(com.asia.frete.relatoriodefretev03.roteiro principal_roteiro,
+   public java.util.List<com.asia.frete.relatoriodefretev03.item> getPrincipal_item()
+   {
+      return this.principal_item;
+   }
+
+   public void setPrincipal_item(
+         java.util.List<com.asia.frete.relatoriodefretev03.item> principal_item)
+   {
+      this.principal_item = principal_item;
+   }
+
+   public java.util.List<com.asia.frete.relatoriodefretev03.cliente> getPrincipal_cliente()
+   {
+      return this.principal_cliente;
+   }
+
+   public void setPrincipal_cliente(
+         java.util.List<com.asia.frete.relatoriodefretev03.cliente> principal_cliente)
+   {
+      this.principal_cliente = principal_cliente;
+   }
+
+   public principal(
+         com.asia.frete.relatoriodefretev03.roteiro principal_roteiro,
          com.asia.frete.relatoriodefretev03.containers principal_containers,
          com.asia.frete.relatoriodefretev03.pedido principal_pedido,
-         com.asia.frete.relatoriodefretev03.item principal_item,
-         com.asia.frete.relatoriodefretev03.cliente principal_cliente,
          java.lang.String principal_link_erp,
-         java.math.BigDecimal principal_total)
+         java.math.BigDecimal principal_total,
+         java.util.List<com.asia.frete.relatoriodefretev03.item> principal_item,
+         java.util.List<com.asia.frete.relatoriodefretev03.cliente> principal_cliente)
    {
       this.principal_roteiro = principal_roteiro;
       this.principal_containers = principal_containers;
       this.principal_pedido = principal_pedido;
-      this.principal_item = principal_item;
-      this.principal_cliente = principal_cliente;
       this.principal_link_erp = principal_link_erp;
       this.principal_total = principal_total;
+      this.principal_item = principal_item;
+      this.principal_cliente = principal_cliente;
    }
 
 }
