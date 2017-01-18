@@ -17,6 +17,9 @@ public class item implements java.io.Serializable
    private java.math.BigDecimal taxa_dolar;
    private java.math.BigDecimal valor_dolar;
 
+   @org.kie.api.definition.type.Label(value = "Codigo da Taxa")
+   private int codigo_da_taxa;
+
    public item()
    {
    }
@@ -91,10 +94,20 @@ public class item implements java.io.Serializable
       this.valor_dolar = valor_dolar;
    }
 
+   public int getCodigo_da_taxa()
+   {
+      return this.codigo_da_taxa;
+   }
+
+   public void setCodigo_da_taxa(int codigo_da_taxa)
+   {
+      this.codigo_da_taxa = codigo_da_taxa;
+   }
+
    public item(int nr_item, java.util.Date dt_vencto,
          java.math.BigDecimal vl_real, java.math.BigDecimal vl_usr,
          java.math.BigDecimal vl_taxa, java.math.BigDecimal taxa_dolar,
-         java.math.BigDecimal valor_dolar)
+         java.math.BigDecimal valor_dolar, int codigo_da_taxa)
    {
       this.nr_item = nr_item;
       this.dt_vencto = dt_vencto;
@@ -103,6 +116,7 @@ public class item implements java.io.Serializable
       this.vl_taxa = vl_taxa;
       this.taxa_dolar = taxa_dolar;
       this.valor_dolar = valor_dolar;
+      this.codigo_da_taxa = codigo_da_taxa;
    }
 
 }
