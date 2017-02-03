@@ -16,6 +16,8 @@ public class cliente implements java.io.Serializable
 
    private int cadimp;
 
+   private java.lang.String cnee;
+
    public cliente()
    {
    }
@@ -70,14 +72,26 @@ public class cliente implements java.io.Serializable
       this.cadimp = cadimp;
    }
 
+   public java.lang.String getCnee()
+   {
+      return this.cnee;
+   }
+
+   public void setCnee(java.lang.String cnee)
+   {
+      this.cnee = cnee;
+   }
+
    public cliente(java.lang.String tp_cliente, java.lang.String contato,
-         java.lang.String des_email, java.lang.String telefone, int cadimp)
+         java.lang.String des_email, java.lang.String telefone, int cadimp,
+         java.lang.String cnee)
    {
       this.tp_cliente = tp_cliente;
       this.contato = contato;
       this.des_email = des_email;
       this.telefone = telefone;
       this.cadimp = cadimp;
+      this.cnee = cnee;
    }
 
 }
