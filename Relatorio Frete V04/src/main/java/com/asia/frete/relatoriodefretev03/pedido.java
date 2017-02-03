@@ -11,6 +11,8 @@ public class pedido implements java.io.Serializable
 
    private int filial_operac;
 
+   private int nr_pedido;
+
    public pedido()
    {
    }
@@ -25,9 +27,20 @@ public class pedido implements java.io.Serializable
       this.filial_operac = filial_operac;
    }
 
-   public pedido(int filial_operac)
+   public int getNr_pedido()
+   {
+      return this.nr_pedido;
+   }
+
+   public void setNr_pedido(int nr_pedido)
+   {
+      this.nr_pedido = nr_pedido;
+   }
+
+   public pedido(int filial_operac, int nr_pedido)
    {
       this.filial_operac = filial_operac;
+      this.nr_pedido = nr_pedido;
    }
 
 }
