@@ -9,23 +9,15 @@ public class cliente implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   private char tp_cliente;
+   private String tp_cliente;
    private java.lang.String contato;
    private java.lang.String des_email;
    private java.lang.String telefone;
 
+   private int cadimp;
+
    public cliente()
    {
-   }
-
-   public char getTp_cliente()
-   {
-      return this.tp_cliente;
-   }
-
-   public void setTp_cliente(char tp_cliente)
-   {
-      this.tp_cliente = tp_cliente;
    }
 
    public java.lang.String getContato()
@@ -58,13 +50,34 @@ public class cliente implements java.io.Serializable
       this.telefone = telefone;
    }
 
-   public cliente(char tp_cliente, java.lang.String contato,
-         java.lang.String des_email, java.lang.String telefone)
+   public java.lang.String getTp_cliente()
+   {
+      return this.tp_cliente;
+   }
+
+   public void setTp_cliente(java.lang.String tp_cliente)
+   {
+      this.tp_cliente = tp_cliente;
+   }
+
+   public int getCadimp()
+   {
+      return this.cadimp;
+   }
+
+   public void setCadimp(int cadimp)
+   {
+      this.cadimp = cadimp;
+   }
+
+   public cliente(java.lang.String tp_cliente, java.lang.String contato,
+         java.lang.String des_email, java.lang.String telefone, int cadimp)
    {
       this.tp_cliente = tp_cliente;
       this.contato = contato;
       this.des_email = des_email;
       this.telefone = telefone;
+      this.cadimp = cadimp;
    }
 
 }
