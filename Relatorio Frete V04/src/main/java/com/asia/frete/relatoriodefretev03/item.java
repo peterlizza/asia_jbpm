@@ -16,7 +16,6 @@ public class item implements java.io.Serializable
    private java.math.BigDecimal taxa_dolar;
    private java.math.BigDecimal valor_dolar;
 
-   @org.kie.api.definition.type.Label("Codigo da Taxa")
    private String codigo_da_taxa;
 
    public item()
