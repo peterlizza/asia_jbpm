@@ -44,6 +44,16 @@
 <property name="defaultSubform" value="roteiro.form"/>
 <property name="fieldClass" value="java.lang.Object"/>
 </field>
+<field position="5" name="principal_principal_containers" type="Subform" id="470912649">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;principal_containers (principal)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="principal/principal_containers"/>
+<property name="defaultSubform" value="containers.form"/>
+<property name="fieldClass" value="java.lang.Object"/>
+</field>
 <dataHolder inputId="" name="#BBBBBB" type="basicType" outId="ano" value="java.lang.Integer" id="ano"/>
 <dataHolder inputId="" name="#E9E371" type="basicType" outId="empresa" value="java.lang.Integer" id="empresa"/>
 <dataHolder inputId="" name="#9BCAFA" type="dataModelerEntry" outId="principal" value="com.asia.frete.relatoriodefretev03.principal" id="principal"/>
