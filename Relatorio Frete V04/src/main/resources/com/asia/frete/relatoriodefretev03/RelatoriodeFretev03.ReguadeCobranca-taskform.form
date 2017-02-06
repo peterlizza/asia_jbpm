@@ -96,6 +96,27 @@
 <property name="enableTableEnterData" value="false"/>
 <property name="fieldClass" value="java.util.List"/>
 </field>
+<field position="8" name="dias_de_atraso" type="InputTextInteger" id="1717823668">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;dias_de_atraso (dias_de_atraso)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="dias_de_atraso"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="9" name="filial" type="InputText" id="2017483680">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;filial (filial)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="filial"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="10" name="link" type="InputText" id="946281766">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;link (link)quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="link"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
 <dataHolder inputId="" name="#BBBBBB" type="basicType" outId="ano" value="java.lang.Integer" id="ano"/>
 <dataHolder inputId="" name="#E9E371" type="basicType" outId="dias_de_atraso" value="java.lang.Integer" id="dias_de_atraso"/>
 <dataHolder inputId="" name="#E9E371" type="basicType" outId="empresa" value="java.lang.Integer" id="empresa"/>
