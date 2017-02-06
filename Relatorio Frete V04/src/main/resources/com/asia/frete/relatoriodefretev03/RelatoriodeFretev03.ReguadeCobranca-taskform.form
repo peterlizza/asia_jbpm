@@ -3,34 +3,6 @@
 <property name="name" value="RelatoriodeFretev03.ReguadeCobranca-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
-<field position="4" name="principal_principal_item" bag-type="com.asia.frete.relatoriodefretev03.item" type="MultipleSubform" id="1046522784">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;principal_item (principal)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="principal/principal_item"/>
-<property name="fieldClass" value="java.util.List"/>
-</field>
-<field position="2" name="principal_principal_cliente" bag-type="com.asia.frete.relatoriodefretev03.cliente" type="MultipleSubform" id="283312625">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;principal_cliente (principal)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="principal/principal_cliente"/>
-<property name="fieldClass" value="java.util.List"/>
-</field>
-<field position="3" name="principal_principal_containers" type="Subform" id="485115080">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;principal_containers (principal)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="principal/principal_containers"/>
-<property name="fieldClass" value="java.lang.Object"/>
-</field>
-<field position="9" name="roteiro" type="InputText" id="465721089">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;roteiro (roteiro)quot;"/>
-<property name="readonly" value="false"/>
-<property name="outputBinding" value="roteiro"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
 <field position="0" name="ano" type="InputTextInteger" id="2064688806">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;ano (ano)quot;"/>
@@ -38,19 +10,64 @@
 <property name="outputBinding" value="ano"/>
 <property name="fieldClass" value="java.lang.Integer"/>
 </field>
-<field position="6" name="principal_principal_pedido" type="Subform" id="619953882">
+<field position="1" name="empresa" type="InputTextInteger" id="710200330">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;principal_pedido (principal)quot;"/>
+<property name="label" value="quot;enquot;,quot;empresa (empresa)quot;"/>
 <property name="readonly" value="false"/>
-<property name="outputBinding" value="principal/principal_pedido"/>
+<property name="outputBinding" value="empresa"/>
+<property name="fieldClass" value="java.lang.Integer"/>
+</field>
+<field position="2" name="principal_principal_cliente" bag-type="com.asia.frete.relatoriodefretev03.cliente" type="MultipleSubform" id="283312625">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;principal_cliente (principal)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="principal/principal_cliente"/>
+<property name="defaultSubform" value="cliente.form"/>
+<property name="previewSubform" value="cliente.form"/>
+<property name="tableSubform" value="cliente.form"/>
+<property name="newItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="addItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="cancelItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="deleteItems" value="false"/>
+<property name="updateItems" value="false"/>
+<property name="visualizeItems" value="false"/>
+<property name="hideCreateItem" value="false"/>
+<property name="expanded" value="false"/>
+<property name="enableTableEnterData" value="false"/>
+<property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="3" name="principal_principal_containers" type="Subform" id="485115080">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;principal_containers (principal)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="principal/principal_containers"/>
+<property name="defaultSubform" value="containers.form"/>
 <property name="fieldClass" value="java.lang.Object"/>
 </field>
-<field position="7" name="principal_principal_roteiro" type="Subform" id="22327054">
+<field position="4" name="principal_principal_item" bag-type="com.asia.frete.relatoriodefretev03.item" type="MultipleSubform" id="1046522784">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;principal_roteiro (principal)quot;"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;principal_item (principal)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
-<property name="outputBinding" value="principal/principal_roteiro"/>
-<property name="fieldClass" value="java.lang.Object"/>
+<property name="outputBinding" value="principal/principal_item"/>
+<property name="defaultSubform" value="item.form"/>
+<property name="previewSubform" value="item.form"/>
+<property name="tableSubform" value="item.form"/>
+<property name="newItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="addItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="cancelItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="deleteItems" value="false"/>
+<property name="updateItems" value="false"/>
+<property name="visualizeItems" value="false"/>
+<property name="hideCreateItem" value="false"/>
+<property name="expanded" value="false"/>
+<property name="enableTableEnterData" value="false"/>
+<property name="fieldClass" value="java.util.List"/>
 </field>
 <field position="5" name="principal_principal_link_erp" type="InputText" id="247563914">
 <property name="fieldRequired" value="false"/>
@@ -59,6 +76,26 @@
 <property name="outputBinding" value="principal/principal_link_erp"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
+<field position="6" name="principal_principal_pedido" type="Subform" id="619953882">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;principal_pedido (principal)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="principal/principal_pedido"/>
+<property name="defaultSubform" value="pedido.form"/>
+<property name="fieldClass" value="java.lang.Object"/>
+</field>
+<field position="7" name="principal_principal_roteiro" type="Subform" id="22327054">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;principal_roteiro (principal)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="outputBinding" value="principal/principal_roteiro"/>
+<property name="defaultSubform" value="roteiro.form"/>
+<property name="fieldClass" value="java.lang.Object"/>
+</field>
 <field position="8" name="principal_principal_total" type="InputTextBigDecimal" id="1352504657">
 <property name="fieldRequired" value="false"/>
 <property name="label" value="quot;enquot;,quot;principal_total (principal)quot;"/>
@@ -66,12 +103,12 @@
 <property name="outputBinding" value="principal/principal_total"/>
 <property name="fieldClass" value="java.math.BigDecimal"/>
 </field>
-<field position="1" name="empresa" type="InputTextInteger" id="710200330">
+<field position="9" name="roteiro" type="InputText" id="465721089">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;empresa (empresa)quot;"/>
+<property name="label" value="quot;enquot;,quot;roteiro (roteiro)quot;"/>
 <property name="readonly" value="false"/>
-<property name="outputBinding" value="empresa"/>
-<property name="fieldClass" value="java.lang.Integer"/>
+<property name="outputBinding" value="roteiro"/>
+<property name="fieldClass" value="java.lang.String"/>
 </field>
 <dataHolder inputId="" name="#BBBBBB" type="basicType" outId="ano" value="java.lang.Integer" id="ano"/>
 <dataHolder inputId="" name="#E9E371" type="basicType" outId="empresa" value="java.lang.Integer" id="empresa"/>
