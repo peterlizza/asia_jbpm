@@ -122,7 +122,7 @@
 <field position="8" name="principal_principal_total" type="InputTextBigDecimal" id="1997015445">
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="false"/>
-<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;principal_total (principal)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;Total em Reaisquot;quot;zhquot;,quot;quot;"/>
+<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;principal_total (principal)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;Total em Reaisquot;quot;zhquot;,quot;quot;"/>
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
@@ -131,21 +131,21 @@
 <property name="outputBinding" value="out_principal/principal_total"/>
 <property name="fieldClass" value="java.math.BigDecimal"/>
 </field>
-<field position="9" name="principal_principal_link_erp" type="InputText" id="668476400">
+<field position="9" name="link" type="InputText" id="47709478">
 <property name="fieldRequired" value="false"/>
-<property name="groupWithPrevious" value="false"/>
-<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;principal_link_erp (principal)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;in_link (link)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;Linkquot;quot;zhquot;,quot;quot;"/>
 <property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
-<property name="inputBinding" value="in_principal/principal_link_erp"/>
-<property name="outputBinding" value="out_principal/principal_link_erp"/>
+<property name="inputBinding" value="in_link"/>
+<property name="outputBinding" value="out_link"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
 <dataHolder inputId="in_ano" name="#BBBBBB" type="basicType" outId="out_ano" value="java.lang.Integer" id="ano"/>
 <dataHolder inputId="in_empresa" name="#E9E371" type="basicType" outId="out_empresa" value="java.lang.Integer" id="empresa"/>
+<dataHolder inputId="in_link" name="#B29FE4" type="basicType" outId="out_link" value="java.lang.String" id="link"/>
 <dataHolder inputId="in_principal" name="#9BCAFA" type="dataModelerEntry" outId="out_principal" value="com.asia.frete.relatoriodefretev03.principal" id="principal"/>
 <dataHolder inputId="in_roteiro" name="#FF54A7" type="basicType" outId="out_roteiro" value="java.lang.String" id="roteiro"/>
 </form>
