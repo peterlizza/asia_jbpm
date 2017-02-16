@@ -6,7 +6,7 @@ package com.asia.frete.relatoriodefretev03;
 
 @javax.persistence.Table(name = "tbl_item")
 @javax.persistence.Entity
-public class tbl_item implements java.io.Serializable
+public class tbl_header implements java.io.Serializable
 {
 
    static final long serialVersionUID = 1L;
@@ -38,7 +38,7 @@ public class tbl_item implements java.io.Serializable
 
    private java.lang.Character status;
 
-   public tbl_item()
+   public tbl_header()
    {
    }
 
@@ -202,7 +202,7 @@ public class tbl_item implements java.io.Serializable
       this.status = status;
    }
 
-   public tbl_item(java.lang.Long id, java.lang.Integer chave_controle,
+   public tbl_header(java.lang.Long id, java.lang.Integer chave_controle,
          java.lang.Integer cd_empresa, java.lang.String cd_roteiro,
          java.lang.Integer ano_roteiro, java.lang.Integer nr_pedido,
          java.lang.String cliente_follow, java.lang.Integer nr_fatura,
