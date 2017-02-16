@@ -3,6 +3,7 @@
 <persistence-unit name="com.asia.frete:RelatoriodeFretev04:2.4" transaction-type="JTA">
 <provider>org.hibernate.ejb.HibernatePersistence</provider>
 <jta-data-source>java:jboss/datasources/PostgreDS</jta-data-source>
+<class>com.asia.frete.relatoriodefretev03.tbl_item</class>
 <exclude-unlisted-classes>true</exclude-unlisted-classes>
 <properties>
 <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
