@@ -4,6 +4,7 @@
 <provider>org.hibernate.ejb.HibernatePersistence</provider>
 <jta-data-source>java:jboss/datasources/PostgreDS</jta-data-source>
 <class>com.asia.frete.relatoriodefretev03.tbl_item</class>
+<class>com.asia.frete.relatoriodefretev03.tbl_header</class>
 <exclude-unlisted-classes>true</exclude-unlisted-classes>
 <properties>
 <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
