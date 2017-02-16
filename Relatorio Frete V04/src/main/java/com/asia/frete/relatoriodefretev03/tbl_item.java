@@ -23,6 +23,7 @@ public class tbl_item implements java.io.Serializable
    private java.lang.Integer filial_operac;
    private java.util.Date data_criacao;
    private java.util.Date data_processamento;
+   @javax.persistence.Id
    private java.lang.Short status;
 
    public tbl_item()
@@ -179,14 +180,14 @@ public class tbl_item implements java.io.Serializable
       this.status = status;
    }
 
-   public tbl_item(java.lang.Long chave_controle,
-         java.lang.Integer cd_empresa, java.lang.String cd_roteiro,
-         java.lang.Integer ano_roteiro, java.lang.Integer nr_pedido,
-         java.lang.String cliente_follow, java.lang.Integer nr_fatura,
-         java.lang.Integer nota_fiscal, java.util.Date dt_eta,
-         java.lang.Short flag_fatura, java.lang.Integer dias_de_atraso,
-         java.lang.Integer filial_operac, java.util.Date data_criacao,
-         java.util.Date data_processamento, java.lang.Short status)
+   public tbl_item(java.lang.Long chave_controle, java.lang.Integer cd_empresa,
+         java.lang.String cd_roteiro, java.lang.Integer ano_roteiro,
+         java.lang.Integer nr_pedido, java.lang.String cliente_follow,
+         java.lang.Integer nr_fatura, java.lang.Integer nota_fiscal,
+         java.util.Date dt_eta, java.lang.Short flag_fatura,
+         java.lang.Integer dias_de_atraso, java.lang.Integer filial_operac,
+         java.util.Date data_criacao, java.util.Date data_processamento,
+         java.lang.Short status)
    {
       this.chave_controle = chave_controle;
       this.cd_empresa = cd_empresa;
