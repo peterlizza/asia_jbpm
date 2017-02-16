@@ -9,22 +9,12 @@ public class pedido implements java.io.Serializable
 
    static final long serialVersionUID = 1L;
 
-   private int filial_operac;
+   private String filial_operac;
 
    private int nr_pedido;
 
    public pedido()
    {
-   }
-
-   public int getFilial_operac()
-   {
-      return this.filial_operac;
-   }
-
-   public void setFilial_operac(int filial_operac)
-   {
-      this.filial_operac = filial_operac;
    }
 
    public int getNr_pedido()
@@ -37,7 +27,17 @@ public class pedido implements java.io.Serializable
       this.nr_pedido = nr_pedido;
    }
 
-   public pedido(int filial_operac, int nr_pedido)
+   public java.lang.String getFilial_operac()
+   {
+      return this.filial_operac;
+   }
+
+   public void setFilial_operac(java.lang.String filial_operac)
+   {
+      this.filial_operac = filial_operac;
+   }
+
+   public pedido(java.lang.String filial_operac, int nr_pedido)
    {
       this.filial_operac = filial_operac;
       this.nr_pedido = nr_pedido;
