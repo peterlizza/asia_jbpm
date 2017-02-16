@@ -5,28 +5,182 @@ package com.asia.frete.relatoriodefretev03;
  */
 
 @javax.persistence.Entity
-public class tbl_cliente implements java.io.Serializable {
+@javax.persistence.Table(name = "tbl_cliente")
+public class tbl_cliente implements java.io.Serializable
+{
 
-    static final long serialVersionUID = 1L;
+   static final long serialVersionUID = 1L;
 
-    @javax.persistence.GeneratedValue(generator = "TBL_CLIENTE_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
-    @javax.persistence.Id
-    @javax.persistence.SequenceGenerator(name = "TBL_CLIENTE_ID_GENERATOR", sequenceName = "TBL_CLIENTE_ID_SEQ")
-    private java.lang.Long id;
+   @javax.persistence.GeneratedValue(generator = "TBL_CLIENTE_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
+   @javax.persistence.Id
+   @javax.persistence.SequenceGenerator(name = "TBL_CLIENTE_ID_GENERATOR", sequenceName = "TBL_CLIENTE_ID_SEQ")
+   private java.lang.Long id;
 
-    public tbl_cliente() {
-    }
-    
-    public tbl_cliente(java.lang.Long id) {
-        this.id = id;
-    }
+   private java.lang.Integer chave_controle;
 
-    public java.lang.Long getId() {
-        return this.id;
-    }
-    
-    public void setId(java.lang.Long id) {
-        this.id = id;
-    }
+   private java.lang.Integer cd_empresa;
+
+   private java.lang.String cd_roteiro;
+
+   private java.lang.Integer ano_roteiro;
+
+   private java.lang.Integer nr_pedido;
+
+   private java.lang.Integer cd_cadimp;
+
+   private java.lang.String tipo_cliente;
+
+   private java.lang.String nm_cadimp;
+
+   private java.lang.String contato;
+
+   private java.lang.String des_email;
+
+   private java.lang.String telefone;
+
+   public tbl_cliente()
+   {
+   }
+
+   public java.lang.Long getId()
+   {
+      return this.id;
+   }
+
+   public void setId(java.lang.Long id)
+   {
+      this.id = id;
+   }
+
+   public java.lang.Integer getChave_controle()
+   {
+      return this.chave_controle;
+   }
+
+   public void setChave_controle(java.lang.Integer chave_controle)
+   {
+      this.chave_controle = chave_controle;
+   }
+
+   public java.lang.Integer getCd_empresa()
+   {
+      return this.cd_empresa;
+   }
+
+   public void setCd_empresa(java.lang.Integer cd_empresa)
+   {
+      this.cd_empresa = cd_empresa;
+   }
+
+   public java.lang.String getCd_roteiro()
+   {
+      return this.cd_roteiro;
+   }
+
+   public void setCd_roteiro(java.lang.String cd_roteiro)
+   {
+      this.cd_roteiro = cd_roteiro;
+   }
+
+   public java.lang.Integer getAno_roteiro()
+   {
+      return this.ano_roteiro;
+   }
+
+   public void setAno_roteiro(java.lang.Integer ano_roteiro)
+   {
+      this.ano_roteiro = ano_roteiro;
+   }
+
+   public java.lang.Integer getNr_pedido()
+   {
+      return this.nr_pedido;
+   }
+
+   public void setNr_pedido(java.lang.Integer nr_pedido)
+   {
+      this.nr_pedido = nr_pedido;
+   }
+
+   public java.lang.Integer getCd_cadimp()
+   {
+      return this.cd_cadimp;
+   }
+
+   public void setCd_cadimp(java.lang.Integer cd_cadimp)
+   {
+      this.cd_cadimp = cd_cadimp;
+   }
+
+   public java.lang.String getTipo_cliente()
+   {
+      return this.tipo_cliente;
+   }
+
+   public void setTipo_cliente(java.lang.String tipo_cliente)
+   {
+      this.tipo_cliente = tipo_cliente;
+   }
+
+   public java.lang.String getNm_cadimp()
+   {
+      return this.nm_cadimp;
+   }
+
+   public void setNm_cadimp(java.lang.String nm_cadimp)
+   {
+      this.nm_cadimp = nm_cadimp;
+   }
+
+   public java.lang.String getContato()
+   {
+      return this.contato;
+   }
+
+   public void setContato(java.lang.String contato)
+   {
+      this.contato = contato;
+   }
+
+   public java.lang.String getDes_email()
+   {
+      return this.des_email;
+   }
+
+   public void setDes_email(java.lang.String des_email)
+   {
+      this.des_email = des_email;
+   }
+
+   public java.lang.String getTelefone()
+   {
+      return this.telefone;
+   }
+
+   public void setTelefone(java.lang.String telefone)
+   {
+      this.telefone = telefone;
+   }
+
+   public tbl_cliente(java.lang.Long id, java.lang.Integer chave_controle,
+         java.lang.Integer cd_empresa, java.lang.String cd_roteiro,
+         java.lang.Integer ano_roteiro, java.lang.Integer nr_pedido,
+         java.lang.Integer cd_cadimp, java.lang.String tipo_cliente,
+         java.lang.String nm_cadimp, java.lang.String contato,
+         java.lang.String des_email, java.lang.String telefone)
+   {
+      this.id = id;
+      this.chave_controle = chave_controle;
+      this.cd_empresa = cd_empresa;
+      this.cd_roteiro = cd_roteiro;
+      this.ano_roteiro = ano_roteiro;
+      this.nr_pedido = nr_pedido;
+      this.cd_cadimp = cd_cadimp;
+      this.tipo_cliente = tipo_cliente;
+      this.nm_cadimp = nm_cadimp;
+      this.contato = contato;
+      this.des_email = des_email;
+      this.telefone = telefone;
+   }
 
 }
