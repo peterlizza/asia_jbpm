@@ -12,8 +12,8 @@ public class tbl_header implements java.io.Serializable
    static final long serialVersionUID = 1L;
 
    @javax.persistence.Id
-   @javax.persistence.GeneratedValue(generator = "TBL_ITEM_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
-   @javax.persistence.SequenceGenerator(name = "TBL_ITEM_ID_GENERATOR", sequenceName = "TBL_ITEM_ID_SEQ")
+   @javax.persistence.GeneratedValue(generator = "TBL_HEADER_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
+   @javax.persistence.SequenceGenerator(name = "TBL_HEADER_ID_GENERATOR", sequenceName = "TBL_HEADER_ID_SEQ")
    private java.lang.Long id;
    private java.lang.Integer chave_controle;
    private java.lang.Integer cd_empresa;
