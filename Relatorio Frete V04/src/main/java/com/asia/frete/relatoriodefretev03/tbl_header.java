@@ -5,13 +5,13 @@ package com.asia.frete.relatoriodefretev03;
  */
 
 @javax.persistence.Entity
-@javax.persistence.Table(name = "tbl_header")
+@javax.persistence.Table(name = "header")
 public class tbl_header implements java.io.Serializable
 {
 
    static final long serialVersionUID = 1L;
 
-   @javax.persistence.GeneratedValue(generator = "TBL_HEADER_ID_GENERATOR", strategy = javax.persistence.GenerationType.AUTO)
+   @javax.persistence.GeneratedValue(strategy = javax.persistence.GenerationType.AUTO, generator = "TBL_HEADER_ID_GENERATOR")
    @javax.persistence.Id
    @javax.persistence.SequenceGenerator(name = "TBL_HEADER_ID_GENERATOR", sequenceName = "TBL_HEADER_ID_SEQ")
    private java.lang.Long id;
