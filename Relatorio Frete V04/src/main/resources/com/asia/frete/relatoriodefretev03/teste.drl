@@ -5,5 +5,93 @@ when
 eval(true)
 then
 System.out.println("Hello world");
+
+try
+    {
+      // create our mysql database connection
+      String myDriver = "org.postgresql.Driver";
+      String myUrl = "jdbc:postgresql://10.130.30.224:5432/AS_DEV";
+      Class.forName(myDriver);
+      Connection conn = DriverManager.getConnection(myUrl, "svcjbpm", "jbpm");
+      
+      // our SQL SELECT query. 
+      // if you only need a few columns, specify them by name instead of using "*"
+      String query_head = "SELECT * FROM head ";
+	  String query_item = "SELECT * FROM item where cd_empresa = ? and cd_roteiro = ? and ano_roteiro = ? and nr_pedido = ?";
+	  String query_cliente = "SELECT * FROM cliente where cd_empresa = ? and cd_roteiro = ? and ano_roteiro = ? and nr_pedido = ?";
+	  
+
+      // create the java statement
+      Statement st = conn.createStatement();
+      
+      // execute the query, and get a java resultset
+      ResultSet rs = st.executeQuery(query_head);
+      
+      // iterate through the java resultset
+      while (rs.next())
+      {
+        int chave_controle 				= rs.getInt("chave_controle");
+		int cd_empresa 					= rs.getInt("cd_empresa");
+        int cd_roteiro					= rs.getInt("cd_roteiro");
+		int ano_roteiro 				= rs.getInt("ano_roteiro");
+		int nr_pedido 					= rs.getInt("nr_pedido");
+		String cliente_follow			= rs.getString("cliente_follow");
+		int nr_fatura 					= rs.getInt("nr_fatura");
+		int nota_fiscal 				= rs.getInt("nota_fiscal");
+        Date dt_eta 					= rs.getDate("dt_eta");
+		int dias_de_atraso 				= rs.getInt("dias_de_atraso");
+		String filial_operac			= rs.getString("filial_operac");
+		Date data_criacao 				= rs.getDate("data_criacao");
+		Date data_processamento			= rs.getDate("data_processamento");
+		String status					= rs.getString("status");
+		           
+        // print the results
+        System.out.format("%s, %s, %s, %s, %s, %s\n", chave_controle, cd_empresa, cd_roteiro, ano_roteiro, nr_pedido, cliente_follow);
+		
+		
+		PreparedStatement ps = conn.prepareStatement(query_item);
+		ps.setInt(1, cd_empresa);
+		ps.setInt(2, cd_roteiro);
+		ps.setInt(3, ano_roteiro); 
+		ps.setInt(4, nr_pedido); 
+		
+		ResultSet rs2 = ps.executeQuery();
+		while ( rs2.next() )
+		{
+				int nr_item 				= rs2.getInt("nr_item");
+				Date dt_vencto 				= rs2.getDate("dt_vencto");
+				int vl_dolar 				= rs2.getInt("vl_dolar");
+				int vl_real 				= rs2.getInt("vl_real");
+				int vl_taxa 				= rs2.getInt("vl_taxa");
+				String nome_taxa			= rs2.getString("nome_taxa");
+				System.out.format("%s, %s, %s, %s, %s, %s\n", nr_item , dt_vencto, vl_dolar, vl_real, vl_taxa, nome_taxa);
+		}
+		PreparedStatement ps2 = conn.prepareStatement(query_cliente);
+		ps2.setInt(1, cd_empresa);
+		ps2.setInt(2, cd_roteiro);
+		ps2.setInt(3, ano_roteiro); 
+		ps2.setInt(4, nr_pedido); 
+		
+		ResultSet rs3 = ps2.executeQuery();
+		while ( rs3.next() )
+		{
+				String tipo_cliente			= rs3.getString("tipo_cliente");
+				String nm_cadimp 			= rs3.getString("nm_cadimp");
+				String contato 				= rs3.getString("contato");
+				String des_email 			= rs3.getString("des_email");
+				String telefone 			= rs3.getString("telefone");
+				
+				System.out.format("%s, %s, %s, %s, %s\n", tipo_cliente , nm_cadimp, contato, des_email, telefone);
+		}
+      }
+      st.close();
+	  System.out.println("acabou ");
+    }
+    catch (Exception e)
+    {
+      System.err.println("Got an exception! ");
+      System.err.println(e.getMessage());
+    }
+  }
 end
 
