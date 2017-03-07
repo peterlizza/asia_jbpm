@@ -1,9 +1,10 @@
 package org.jbpm.frete.relatoriodefretev03;
 import java.sql.*;
 
+
 rule "carga"
+ruleflow-group "cargagrupo"
 when
-eval(true)
 then
 System.out.println("Carga");
 
