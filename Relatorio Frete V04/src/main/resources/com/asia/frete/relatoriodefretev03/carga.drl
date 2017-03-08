@@ -53,13 +53,13 @@ try
 		String status					= rs.getString("status");
 		
 		Pedido ped = new pedido();
-		ped.setNr_pedido(nr_pedido nr_pedido);
-		ped.setFilial_operac(filial_opera filial_operac);
+		ped.setNr_pedido(nr_pedido);
+		ped.setFilial_operac(filial_operac);
 		insert(ped);
 		           
 		Containers cont = new containers();
-		cont.setDt_eta(dt_eta dt_eta);
-		cont.setNota_fiscal(nota_fiscal nota_fiscal);
+		cont.setDt_eta(dt_eta);
+		cont.setNota_fiscal(nota_fiscal);
 		insert(cont);           
 		           
         // print the results
