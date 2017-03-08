@@ -52,7 +52,7 @@ try
 		Date data_processamento			= rs.getDate("data_processamento");
 		String status					= rs.getString("status");
 		
-		Pedido ped = new pedido();
+		pedido ped = new pedido();
 		ped.setNr_pedido(nr_pedido);
 		ped.setFilial_operac(filial_operac);
 		insert(ped);
