@@ -57,7 +57,7 @@ try
 		ped.setFilial_operac(filial_operac);
 		insert(ped);
 		           
-		Containers cont = new containers();
+		containers cont = new containers();
 		cont.setDt_eta(dt_eta);
 		cont.setNota_fiscal(nota_fiscal);
 		insert(cont);           
@@ -97,7 +97,7 @@ try
 				String contato 				= rs3.getString("contato");
 				String des_email 			= rs3.getString("des_email");
 				String telefone 			= rs3.getString("telefone");
-				Cliente cli = new  cliente();
+				cliente cli = new  cliente();
 				cli.setTp_cliente(tipo_cliente);
 				cli.setContato(contato); 
 				cli.setTelefone(telefone);
