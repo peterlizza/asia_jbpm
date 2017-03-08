@@ -63,7 +63,7 @@ try
 		insert(cont);           
 		           
         // print the results
-        System.out.format("%s, %s, %s, %s, %s, %s\n", chave_controle, cd_empresa, cd_roteiro, ano_roteiro, nr_pedido, cliente_follow);
+        System.out.formattttttt("%s, %s, %s, %s, %s, %s\n", chave_controle, cd_empresa, cd_roteiro, ano_roteiro, nr_pedido, cliente_follow);
 		
 		
 		PreparedStatement ps = conn.prepareStatement(query_item);
