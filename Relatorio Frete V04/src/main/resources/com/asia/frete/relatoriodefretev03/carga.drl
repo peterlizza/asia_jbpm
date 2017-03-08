@@ -46,6 +46,16 @@ try
 		Date data_criacao 				= rs.getDate("data_criacao");
 		Date data_processamento			= rs.getDate("data_processamento");
 		String status					= rs.getString("status");
+		
+		Pedido ped = new pedido();
+		ped.setNr_pedido(nr_pedido nr_pedido);
+		ped.setFilial_operac(filial_opera filial_operac);
+		insert(ped);
+		           
+		Containers cont = new containers();
+		cont.setDt_eta(dt_eta dt_eta);
+		cont.setNota_fiscal(nota_fiscal nota_fiscal);
+		insert(cont);           
 		           
         // print the results
         System.out.format("%s, %s, %s, %s, %s, %s\n", chave_controle, cd_empresa, cd_roteiro, ano_roteiro, nr_pedido, cliente_follow);
@@ -82,7 +92,12 @@ try
 				String contato 				= rs3.getString("contato");
 				String des_email 			= rs3.getString("des_email");
 				String telefone 			= rs3.getString("telefone");
-				
+				Cliente cli = new  cliente();
+				cli.setTp_cliente(tipo_clinete, tipo_cliente);
+				cli.setContato(contato contato); 
+				cli.setTelefone(telefone telefone);
+				insert(cli);
+			
 				System.out.format("%s, %s, %s, %s, %s\n", tipo_cliente , nm_cadimp, contato, des_email, telefone);
 		}
       }
