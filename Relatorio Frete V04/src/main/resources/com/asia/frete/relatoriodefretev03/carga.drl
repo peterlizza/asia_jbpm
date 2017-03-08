@@ -1,4 +1,9 @@
 package org.jbpm.frete.relatoriodefretev03;
+import com.asia.frete.relatoriodefretev03.roteiro;
+import com.asia.frete.relatoriodefretev03.pedido;
+import com.asia.frete.relatoriodefretev03.item;
+import com.asia.frete.relatoriodefretev03.containers;
+import com.asia.frete.relatoriodefretev03.cliente;
 import java.sql.*;
 
 
@@ -47,12 +52,12 @@ try
 		Date data_processamento			= rs.getDate("data_processamento");
 		String status					= rs.getString("status");
 		
-		pedido ped = new pedido();
+		Pedido ped = new pedido();
 		ped.setNr_pedido(nr_pedido nr_pedido);
 		ped.setFilial_operac(filial_opera filial_operac);
 		insert(ped);
 		           
-		containers cont = new containers();
+		Containers cont = new containers();
 		cont.setDt_eta(dt_eta dt_eta);
 		cont.setNota_fiscal(nota_fiscal nota_fiscal);
 		insert(cont);           
@@ -92,7 +97,7 @@ try
 				String contato 				= rs3.getString("contato");
 				String des_email 			= rs3.getString("des_email");
 				String telefone 			= rs3.getString("telefone");
-				cliente cli = new  cliente();
+				Cliente cli = new  cliente();
 				cli.setTp_cliente(tipo_clinete, tipo_cliente);
 				cli.setContato(contato contato); 
 				cli.setTelefone(telefone telefone);
