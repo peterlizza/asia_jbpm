@@ -47,12 +47,12 @@ try
 		Date data_processamento			= rs.getDate("data_processamento");
 		String status					= rs.getString("status");
 		
-		Pedido ped = new pedido();
+		pedido ped = new pedido();
 		ped.setNr_pedido(nr_pedido nr_pedido);
 		ped.setFilial_operac(filial_opera filial_operac);
 		insert(ped);
 		           
-		Containers cont = new containers();
+		containers cont = new containers();
 		cont.setDt_eta(dt_eta dt_eta);
 		cont.setNota_fiscal(nota_fiscal nota_fiscal);
 		insert(cont);           
@@ -92,7 +92,7 @@ try
 				String contato 				= rs3.getString("contato");
 				String des_email 			= rs3.getString("des_email");
 				String telefone 			= rs3.getString("telefone");
-				Cliente cli = new  cliente();
+				cliente cli = new  cliente();
 				cli.setTp_cliente(tipo_clinete, tipo_cliente);
 				cli.setContato(contato contato); 
 				cli.setTelefone(telefone telefone);
